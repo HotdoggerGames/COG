@@ -11,3 +11,11 @@ class input {
             )
     }
     }
+class object {
+    constructor (Name = '',Transform = transform) {
+        this.Transform = Transform;
+        this.Name = Name;
+        document.getElementById(Name).style.left = Transform.x + 'px';
+        document.getElementById(Name).style.top = Transform.y + 'px';
+    };
+}
